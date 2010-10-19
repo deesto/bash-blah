@@ -6,8 +6,7 @@ set incsearch
 set ignorecase
 set smartcase
 "
-" displaying text
-" Lock cursor line to middle of screen ("Typewriter" scrolling")
+" scrolling: lock cursor line to middle of screen
 set scrolloff=999 
 "
 " syntax, highlighting, spelling
@@ -24,7 +23,6 @@ colorscheme sienna
 set laststatus=2
 "
 " Custom status line; see:
-" 
 " http://got-ravings.blogspot.com/2008/08/vim-pr0n-making-statuslines-that-own.html
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 "
@@ -34,29 +32,26 @@ if has("gui_running")
   set guioptions-=T
 endif
 "
-" messages and info
+" info
 set showcmd
 set showmode
 set ruler
 set number
-" turn on the "visual bell" - which is much quieter than the "audio 
-" blink"
+" turn on the "visual bell"; quieter than the "audio blink"
 set visualbell
 set helplang=en
 "
 " editing text
-" make that backspace key work the way it should
+" force the backspace key to work the way it should
 set backspace=indent,eol,start
 set showmatch
-" do NOT put a carriage return at the end of the last line! if you are 
-" coding for the web the default will cause http headers to be sent. 
-" bad.
+" no return at EOL for EOF! causes HTTP headers for web coding ... bad
 set binary noeol
 "
 " tabs and indenting
 " set auto-indenting on for programming
 set autoindent
-" set our tabs to four spaces
+" set tabs to four spaces
 set ts=4
 "
 " line wrapping
