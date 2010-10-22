@@ -88,7 +88,8 @@ set history=100
 " Treat ambiguous double-width characters (e.g.â¡æâª etc) correctly
 set ambiwidth=double
 " file type detection
-filetype on            " enables filetype detection
-filetype plugin on     " enables filetype specific plugins
-" omni-completion
+filetype on
+filetype plugin on
+filetype indent on 
+" omni-completion (though it is built-in in later version)
 set ofu=syntaxcomplete#Complete
