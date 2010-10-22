@@ -90,3 +90,5 @@ set ambiwidth=double
 " file type detection
 filetype on            " enables filetype detection
 filetype plugin on     " enables filetype specific plugins
+" omni-completion
+set ofu=syntaxcomplete#Complete
