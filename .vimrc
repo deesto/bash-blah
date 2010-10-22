@@ -93,3 +93,5 @@ filetype plugin on
 filetype indent on 
 " omni-completion (though it is built-in in later version)
 set ofu=syntaxcomplete#Complete
+" supertab plugin support
+let g:SuperTabDefaultCompletionType = "context"
