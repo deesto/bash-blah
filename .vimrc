@@ -50,7 +50,7 @@ set binary noeol
 "
 " tabs and indenting
 " set auto-indenting on for programming
-set autoindent
+"   set autoindent
 " set tabs to four spaces
 set ts=4
 "
@@ -87,3 +87,6 @@ set history=100
 " multi-byte characters
 " Treat ambiguous double-width characters (e.g.â¡æâª etc) correctly
 set ambiwidth=double
+" file type detection
+filetype on            " enables filetype detection
+filetype plugin on     " enables filetype specific plugins
